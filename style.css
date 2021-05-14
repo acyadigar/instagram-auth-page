@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+:root {
+  --btn-color: #0095F6;
+  --border-color: #DBDBDB;
+  --input-bg: #E8F0FE;
+  --fb-text: #385185;
+  --text-c: #8E8E8E;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  background: #FAFAFA;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+button {
+  cursor: pointer;
+}
+main {
+  width: 55rem;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  font-size: 14px;
+}
+section, .form {
+  width: 26rem;
+  margin: auto;
+  height: inherit;
+}
+section {
+  background-image: url(https://instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+  position: relative;
+}
+form {
+  width: 22rem;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input {
+  margin-bottom: .5rem;
+}
+input {
+  width: 16rem;
+  font-size: 12px;
+  padding: 14px 0 2px 8px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+}
+.password {
+  display: flex;
+  align-items: center;
+}
+.password input {
+  width: 13rem;
+}
+.password button {
+  height: 2rem;
+  width: 3rem;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  background: #FAFAFA;
+  font-weight: bold;
+  border-left: none;
+}
+button:focus, input {
+  outline: 0;
+}
+
+ /* Form Layout */
+
+form, .register {
+  border: 1px solid var(--border-color);
+  background: #FFFFFF;
+}
+form h1 {
+  letter-spacing: 1px;
+  font-family: 'Grand Hotel', cursive;
+  font-size: 48px;
+  margin: 2rem;
+}
+.login-btn {
+  width: 16rem;
+  padding: .4rem;
+  background: var(--btn-color);
+  font-weight: bold;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.or {
+  display: flex;
+  color: #777;
+  align-items: center;
+  margin-top: .8rem;
+  font-size: 13px;
+}
+.hr {
+  background-color: var(--border-color);
+  height: 1px;
+  width: 6rem;
+  margin: 0 1rem;
+}
+.auth-with {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  color: var(--fb-text);
+}
+.auth-with img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: .5rem;
+}
+.forgot-pw {
+  margin: 1.5rem 0;
+  font-size: 12px;
+  color: var(--fb-text);
+}
+.register {
+  width: 22rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.register p {
+  margin: 0 .2rem;
+}
+.register p:last-child {
+  color: var(--btn-color);
+  font-weight: bold;
+}
+.download-p {
+  margin-top: 1rem;
+  text-align: center;
+}
+.download {
+  margin-top: 1rem;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+.download img {
+  height: 40px;
+  margin: 0 .3rem;
+}
+
+ /* Image Slider Animation  */
+
+.slide-img {
+  position: absolute;
+  top: 6.2rem;
+  left: 9.43rem;
+  animation: slider-animation;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+.slide-img:nth-child(2){ animation-delay: 5s;}
+.slide-img:nth-child(3){ animation-delay: 10s;}
+.slide-img:nth-child(4){ animation-delay: 15s;}
+.slide-img:nth-child(5){ animation-delay: 20s;}
+@keyframes slider-animation {
+  0% {
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
